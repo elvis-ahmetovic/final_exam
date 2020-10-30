@@ -1,0 +1,1331 @@
+/* Variables */
+:root {
+  --main-color: #083b66; 
+  --btn-hover: #0d5896;
+  --placeholder: rgb(8, 59, 102, 0.6);  
+}
+
+/* Wrapper */
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+#home{
+    height: 10px;
+}
+
+/* NAVBAR */
+/* Position fixed */
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/* Setup navbar brand */
+.navbar-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Navbar links */
+.nav-item a{
+    color: #ccc;
+    font-size: 1.5em;
+    margin-left: 2em; /* border: 1px solid red; */
+}
+
+/* Navbar dropdown toggler link */
+#navbarDropdown{
+    color:#ccc;
+    font-size: 1.5em;
+}
+
+/* Navbar dropdown toggler link hover */
+#navbarDropdown:hover{
+    text-decoration: underline;
+}
+
+/* Dropdown Menu */
+.dropdown-menu{
+    background-color: #ccc;
+    color: var(--main-color);
+}
+
+/* Dropdown Menu links */
+.dropdown-menu a{
+    color: var(--main-color);
+    font-size: 1.5em;
+}
+
+/* Navbar users image */
+.nav-item img{
+    width: 30px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+/* Number of Messages Badge */
+.badge{
+    color: red;
+    font-size: 0.7em;
+}
+
+
+/* Navbar logout form */
+.nav-item form{
+    padding-left: 2em;
+}
+
+/* Navbar logout button */
+.logout,
+.admin-logout{
+    border: none;
+    background-color: inherit;
+    color: var(--main-color);
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.logout{
+    color: #ccc;
+}
+
+/* Logout button hover */
+.nav-item form input:hover,
+.admin-logout:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+/* WELCOME */
+/* Welcome div */
+.welcome{
+    background-image: url('../images/welcome.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 55vh;
+    color: #083b66;
+}
+
+/* Logo on welcome page */
+.logo{
+    width: 13em;
+}
+
+/* Search heading */
+.search-h{
+    font-size: 2em;
+}
+
+/* Response div, for showing suggestions */
+#response{
+    height: 18vh;
+    overflow: auto;
+}
+
+#response .error{
+    margin-top: 20px;
+}
+
+/* Unordered list in response div */
+#response ul{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* List items */
+#response ul li{
+    font-size: 1.3em;
+    list-style: none;
+    cursor: pointer;
+}
+
+/* List items hover */
+#response ul li:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* MOTIVATION MSGS, LOGIN & REGISTRATION */
+/* m-msgs heading */
+.m-msgs h2{
+    font-size: 1.5em;
+}
+
+/* log-reg, login & m-msgs div */
+.log-reg,
+.login-div,
+.m-msgs{
+    height: 40vh;
+    color: var(--main-color);
+    overflow: auto;
+}
+
+/* log-reg links */
+.log-reg a,
+.log-reg p{
+    color: var(--main-color);
+    font-size: 1.5em;
+}
+
+/* log-reg links hover */
+.log-reg a:hover,
+.log-reg p:hover{
+    color: var(--btn-hover);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* login-div form & m-msgs taxt */
+.login-div form,
+.m-msgs p{
+    width: 80%;
+}
+
+/* Login-div back button, m-msgs taxt, Register back button */
+.login-div p,
+.m-msgs p,
+.register form a{
+    font-size: 1.3em;
+}
+
+/* login-div back button hover */
+.login-div p:hover{
+    color: var(--btn-hover);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* REGISTER PAGE */
+/* Register div */
+.register{
+    min-height: 100vh;
+    color: var(--main-color);
+    background-image: url('../images/register.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Register title */
+.register-title{
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-top: 2em;
+}
+
+.gender{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+}
+
+/* RANDOM */
+/* Random div */
+.random{
+    background-color: #f8f8f8;
+    color: var(--main-color);
+}
+
+/* Coach card */
+.card{
+    border: none;
+    border-radius: 15px;
+    box-shadow: -14px -22px 18px -11px rgba(1,35,63,0.27);
+    cursor: pointer;
+}
+
+/* Coach card hover */
+.card:hover{
+    box-shadow: 14px 32px 18px -11px rgba(1,35,63,0.27);
+}
+
+/* Category name in card title */
+.card h3 span{
+    font-size: 0.8em;
+}
+
+/* hr line */
+hr{
+  width: 80%;               
+  background-color: var(--main-color);
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+/* Coach card main div */
+.card-main{
+    width: 100%;
+    color: var(--main-color);  
+}
+
+/* Coach card img */
+.card-main img{
+    width: 8em;
+    height: 10em;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+}
+
+/* Coach card info */
+.card-info{
+    width: 50%;
+    font-size: 1.4em;
+}
+
+/* Coach card button with link */
+.buttons button a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+/* Coach card button with link hover */
+.buttons button a:hover{
+    background-color: var(--btn-hover);
+    color: #fff;
+}
+
+/*MODAL*/
+/* Modal */
+.modal{
+    color: var(--main-color);
+}
+
+/* Modal header */
+.modal-header{
+    background-color: #f8f8f8;
+    border: none;
+}
+
+/* Div with title and hr */
+.modal-title-hr{
+    width: 80%;
+}
+
+/* Modal title */
+.modal-title{
+    font-size: 2em;
+}
+
+/* X button */
+.modal-header button span{
+    font-size: 1.5em;;
+}
+
+/* X button hover */
+.modal-header button span:hover{
+    color: var(--btn-hover);
+    font-size: 1.7em;;
+}
+
+/* X button active */
+.modal-header button span:active{
+    color: var(--main-color);
+    font-size: 1.5em;
+    outline: none;
+}
+
+/* Modal body title */
+.modal-body-title{
+    font-size: 1.5em;
+}
+
+/* Modal body text */
+.modal-body-text{
+    font-size: 1.3em;
+}
+
+/* Modal footer */
+.modal-footer{
+    background-color: #f8f8f8;
+    border: none;
+}
+
+/* Modal footer button with link */
+.modal-footer button a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+/* Modal footer button with link hover */
+.modal-footer button a:hover{
+    background-color: var(--btn-hover);
+    color: #fff;
+}
+
+/* CONTACT */ 
+/* Contact */
+.contact{
+    color: var(--main-color);
+    height: 80vh;
+}
+
+/* FOOTER */
+/* Footer notes */
+.footer p{
+    color: var(--main-color);
+    font-size: 1.3em;
+    line-height: 10px;
+    font-weight: 200;
+}
+
+/* RESULTS */
+/* Results div */
+.results{
+    color: var(--main-color);
+    margin-top: 4.8em;
+}
+
+/* Search term */
+.term{
+    font-size: 1.5em;
+}
+
+/* Search term */
+.term span{
+    font-weight: bold;
+}
+
+/* Search results container div */
+.search-results{
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+.no-results{
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+/* PROFILE */
+/* Profile info */
+.profile-info{
+    color: var(--main-color);
+    margin-top: 4.8em;
+}
+
+/* Personal info div */
+.personal-container{
+    background-color: #ccc;
+    width: 60%;
+    border-radius: 15px;
+}
+
+/* Avatar & My info divs */
+.avatar-my-info{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Avatar img */
+.avatar img{
+    width: 10em;
+    border: 5px inset var(--main-color);
+    border-radius: 15px;
+}
+
+/* MY info title */
+.my-info h4{
+    font-size: 1.7em;
+}
+
+/* My info paragraphs */
+.my-info-text{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* My info p spans */
+.my-info-text span{
+    font-weight: normal;
+}
+
+/* Note div */
+.note{
+    color: var(--main-color);
+}
+
+/* Note container */
+.note-container{
+    background-color: #ccc;
+    width: 60%;
+    max-height: 80vh;
+    border-radius: 15px;
+    color: var(--main-color);
+    overflow: auto;
+}
+
+/* Note list form */
+.note-form{
+    width: 26em;
+}
+
+/* List of notes */
+.table{
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.note-list-row form button{
+    border: none;
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+/* Note list items */
+.note-list-row td{
+    color: var(--main-color);
+    font-size: 1.5em;
+}
+
+/* Note list items hover */
+.table-hover tr:hover td{
+    background-color: #fff;
+}
+
+/* Trash icon hover */
+.fa-trash-alt:hover{
+    color: var(--btn-hover);
+    cursor: pointer;
+}
+
+/* Advertise div */
+.advertise{
+    margin-top: 4.7em;
+}
+
+/* Ads div */
+.ads{
+    background-color: #ccc;
+    width: 60%;
+    max-height: 80vh;
+    border-radius: 15px;
+    color: var(--main-color);
+    overflow: auto;
+}
+
+/* Ads back button hover */
+.back-button{
+    font-size: 1.4em;
+    color: var(--main-color);
+}
+
+/* Ads back button hover */
+.back-button:hover{
+    text-decoration: underline;
+}
+
+/* Coach panel */
+.coach-panel{
+    margin-top: 4.7em;
+    color: var(--main-color);
+}
+
+/* Coach panel container */
+.coach-panel-container{
+    background-color: #ccc;
+    width: 60%;
+    border-radius: 15px;
+}
+
+/* Coach info */
+.coach-info{
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    width: 70%;
+}
+
+/* Coach info title */
+.coach-info-h{
+    font-size: 1.7em;
+}
+
+/* Coach info text */
+.coach-info-text{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/* Coach info text span */
+.coach-info-text span{
+    font-weight: normal;
+}
+
+/* Message to user */
+.msg-to-users{
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    width: 70%;
+}
+
+/* Message title */
+.msg-to-users-h{
+    font-size: 1.7em;
+}
+
+/* Message text */
+.msg-text-p{
+    font-size: 1.3em;
+}
+
+/* Small change buttons */
+.change{
+    font-size: 1em;
+    font-weight: 100;
+    cursor: pointer;
+    color: blue;
+
+}
+
+/* Small change buttons hover */
+.change:hover{
+    text-decoration: underline;
+}
+
+/* MESSAGES */
+/* Messages */
+.messages{
+    margin-top: 4.8em;
+    color: var(--main-color);
+}
+
+/* Conversation div */
+.conversations{
+    background-color: #f8f8f8;
+    border-radius: 15px;
+}
+
+/* Conversations list */
+.conv-list{
+    width: 100%;
+    height: 76vh;
+}
+
+/* Conversation card wrapper (link) */
+.conv-card-wrapper{
+    color: var(--main-color);
+}
+
+/* Conversation card wrapper hover */
+.conv-card-wrapper:hover{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+/* Conversation card in conversation div */
+.conv-card{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    /* border-bottom: 1px solid var(--main-color); */
+    border-radius: 15px;
+}
+
+/* Conversation card hover */
+.conv-card:hover{
+    background-color: #ecebeb;
+}
+
+.active{
+    background-color: #dbdada;
+}
+
+/* Img in conversation card */
+.conv-card-img{
+    width: 4em; 
+    height:4em;
+    border: 1px solid var(--main-color);
+    border-radius:50%;
+}
+
+/* Conversation card title(name&lastname) */
+.conv-card-info-h{
+    font-size: 1.3em;
+}
+
+/* Last message */
+.short-msg{
+    font-size: 1.2em;
+}
+
+/* Date & time of lst message */
+.date-time{
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+/* Conversation container div */
+.conv-msgs-container{
+    background-color: #f8f8f8;
+    color: var(--main-color);
+    border-radius: 15px;
+    height: 78vh;
+}
+
+/* Conversation body div */
+.conv-msgs-body{
+    height: 65vh;
+}
+
+/* No Selected Conversation Message */
+.noConversations{
+    height: 100%;
+}
+
+/* Conversation line div */
+.conversation-line{
+    border-bottom: 1px solid var(--main-color);
+}
+
+/* Conversation line title (name) */
+.conversation-line-h{
+    font-size: 1.5em;
+}
+
+/* Conversation line text */
+.conversation-line-text{
+    font-size: 1.3em;
+}
+
+/* Delete Conversation Button */
+.delete-conv-b{
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* Delete Conversation Button hover */
+.delete-conv-b:hover{
+    background-color: var(--btn-hover);
+}
+
+/* ADMINISTRATION PAGE */
+/* Administration Login DIV */
+.admin-login{
+    color: var(--main-color);
+}
+
+/* Links in Admin Login DIV */
+.admin-login a{
+    font-size: 1.5em;
+}
+
+/* Information Messages on Admin Page */
+.infoMsg{
+    font-size: 1.5em;
+}
+
+/* Top Bar on Admin Page */
+.admin-links{
+    background-color: #ccc;
+}
+
+/* Tables for displaying users, coaches and banned */
+.adminTable thead th{
+    font-size: 1.3em;
+}
+
+/* Banned Class */
+.banned{
+    background-color: #c03333;
+    color: #fff;
+}
+
+/* Admin Class */
+.is-admin{
+    background-color: #f1a809;
+    color: #fff;
+}
+
+/* Table Body */
+.adminTable tbody{
+    font-size: 1.3em;
+}
+
+/* Full Access Button */
+.adminTable tbody input[value="Pristup"]{
+    background-color: green;
+}
+
+/*  Add & Delete Categories DIV
+    ADD & Delete Motivation Messages
+    Contact Messages
+    Deleted Contact Messages 
+ */
+.addDelCat,
+.addDelMMsgs,
+.contactMsgs,
+.deletedCtMsgs{
+    height: 80vh;
+    overflow: auto;
+    color: var(--main-color);
+}
+
+/* 
+    Contact Messages
+    Deleted Contact Messages
+*/
+.contactMsgs,
+.deletedCtMsgs{
+    width: 100%;
+}
+
+/* Contact Messages & Deleted Messages card title */
+.contactMsgs .card h5,
+.deletedCtMsgs .card h5{
+    font-size: 1.5em;
+}
+
+/* Contact Messages & Deleted Messages card sub-title & card-text */
+.contactMsgs .card h6,
+.contactMsgs .card .card-text,
+.deletedCtMsgs .card h6,
+.deletedCtMsgs .card .card-text{
+    font-size: 1.2em;
+}
+
+/* Deleted Messages & Contact messages card */
+.card-msg{
+    box-shadow: none;
+    background-color: #f8f8f8;
+}
+
+/* Deleted Messages & Contact Messagea card hover */ 
+.card-msg:hover{
+    box-shadow: none;
+    background-color: #eeeeee;
+}
+
+/* New Motivation Messages Form */
+.adminMMsgs{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Motivation Messages list */
+.adminMMsgs-ul{
+    border-radius: 15px;
+}
+
+/* Motivation Messages list even childs bg */
+.adminMMsgs-ul:nth-child(even){
+    background-color: rgb(241, 241, 241);
+}
+
+/* Motivation Messages list odd childs bg */
+.adminMMsgs-ul:nth-child(odd){
+    background-color: rgb(250, 250, 250);
+}
+
+/* Motivation Messages list items */
+.adminMMsgs-ul li{
+    list-style-type: none;
+}
+
+/* Motivation Messages list title */
+.adminMMsgs-title{
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+/* Motivation Messages list text */
+.adminMMsgs-text{
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/* Admin Pass Change Title */
+.admin-pass h3{
+    font-size: 2.5em;
+    font-weight: 100;
+    color: var(--main-color);
+}
+
+
+
+/* TITLES */
+/* Contact, Results, Profile, Notes, Advertise, Control panel & Messages */
+.contact-h,
+.results-h,
+.profile-h,
+.note-h,
+.ads-h,
+.coach-panel-h,
+.messages-h{
+    font-size: 2em;
+    background-color: #ccc;
+    width: 50%;
+    color: var(--main-color);
+    border-radius: 15px;
+}
+
+/* INPUTS, textareas & BUTTONS */
+/* Gender & FIle text size REGISTER */
+.gender-val{
+    font-size: 1.5em;
+}
+
+/* Change Avatar */
+.custom-file-change{
+    font-size: 1.3em;
+    background-color: #fff;;
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Addvertise select tag */
+.ads form select{
+    color: var(--placeholder);
+    width: 17em;
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    outline: none;
+    font-size: 1.5em;
+}
+
+/* Advertise option tag */
+.ads form select option{
+    color: var(--main-color);
+}
+
+/* Login, Register, Search-(Welcome), Contact, (mail, city & pass change),
+ * Note, Advertise, Change coach info,
+ * Message-user title, Message-user title, Search conversation,
+ * Conversation live, New recipient, New Message Select,
+   New Message Textarea & Admin Inputs inputs(text, password...) */
+.login-i,
+.register-i,
+.upload,
+.search-i,
+.contact-i,
+.mail-city-pass-i,
+.note-i,
+.ads-i,
+.change-coach-info-i,
+.change-coach-category,
+.msg-title-i,
+.msg-text-i,
+.conversation-live-i,
+.new-message-select,
+.new-message-i,
+.adminMMsgs-i,
+.admin-pass-i{
+    width: 18em;
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    outline: none;
+    color: var(--main-color)!important;
+    font-size: 1.3em;
+}
+
+/* Register inputs, New Message Select & New Message Textarea width */
+.register-i,
+.new-message-select,
+.new-message-i{
+    width: 22em;
+}
+
+/* New Message Option font size */
+.new-message-select option{
+    font-size: 0.9em;
+}
+
+.upload{
+    width: 12em;
+    color: var(--placeholder)!important;
+}
+
+/* Search-(Welcome) input with border & font size */
+.search-i{
+    border: none;
+    font-size: 1.5em;
+}
+
+/* Mail, City & Pass change inputs width & font-size */
+.mail-city-pass-i{
+    width: unset;
+    font-size: 1em;
+}
+
+/* Note inputs width */
+.note-i{
+    width: 25em;
+}
+
+/* Advertise inputs width & font-size */
+.ads-i{
+    width: 17em;
+    font-size: 1.5em;
+}
+
+/* Change coach info inputs width */
+.change-coach-info-i,
+.change-coach-category{
+    width: 12em;
+}
+
+/* Conversation live textarea width unset, border-radius & font-size */
+.conversation-live-i{
+    width: unset;
+    border-radius: 15px 0 0 15px;
+    font-size: 1.2em;
+}
+
+/* Admin inputs */
+.adminMMsgs-i{
+    width: 100%;
+}
+
+/* Login, Register, Search-(Welcome), Contact, (mail, city & pass change),
+ * Note, Advertise, Change coach info,
+ * Message-user title, Message-user text, Search conversation,
+ * Conversation live, New recipient, New Message Select &
+   New Message Textarea inputs placeholder */
+.login-i::placeholder,
+.register-i::placeholder,
+.search-i::placeholder,
+.contact-i::placeholder,
+.mail-city-pass-i::placeholder,
+.note-i::placeholder,
+.ads-i::placeholder,
+.change-coach-info-i::placeholder,
+.msg-title-i::placeholder,
+.msg-text-i::placeholder,
+.new-message-i::placeholder,
+.new-message-select::placeholder,
+.conversation-live-i::placeholder,
+.adminMMsgs-i::placeholder,
+.admin-pass-i::placeholder{
+    color: var(--placeholder);
+}
+
+/* Login, Card, Modal, Register, Search-(Welcome), 
+ * Contact, Change avatar, (mail, city & pass change), 
+ * Coach panel, Note, Advertise, Coach info change,
+ * Message-user title, Message-user text, New Message,
+ * Conversation live, New Message & Admin page submit buttons, */
+.login-b,
+.buttons button,
+.modal-footer button,
+.register-b,
+.search-b,
+.contact-b,
+.change-avatar-b,
+.mail-city-pass-b,
+.panel-btn,
+.note-b,
+.ads-b,
+.change-coach-info-b,
+.msg-title-b,
+.msg-text-b,
+.new-msg-btn,
+.conversation-live-b,
+.new-message-b,
+.admin-b,
+.adminMMsgs-b,
+.admin-pass-b{
+    width: 8em;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 1.3em;
+    background-color: var(--main-color);
+    color: #ccc;
+}
+
+.admin-b-del{
+    width: 5em;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background-color: rgb(153, 8, 8);
+    color: #ccc;
+}
+
+.admin-b-del:hover{
+    border-radius: 10px;
+    background-color: rgb(179, 10, 10);
+    color: #ccc;
+}
+
+/* Conversation toggle button */
+.contacts-btn{
+    color: var(--main-color);
+    border: none;
+    outline: none;
+}
+
+/* Search-(Welcome) submit button */
+.search-b{
+    width: 5em;
+    font-size: 1.5em;
+}
+
+/* Change avatar button width & font size */
+.change-avatar-b{
+    width: 9em;
+    font-size: 1.1em;
+}
+
+/* Mail, City, Pass change, Coach panel & New Message button width & font-size */
+.mail-city-pass-b,
+.panel-btn,
+.new-msg-btn{
+    width: unset;
+    font-size: 1.1em;
+}
+
+/* Note button width */
+.note-b{
+    width: 4em;
+}
+
+/* Change coach info & Message-user title, Message-user text, button width font-size */
+.change-coach-info-b,
+.msg-title-b,
+.msg-text-b,
+.admin-b,
+.admin-pass-b{
+    width: 10em;
+    font-size: 1.2em;
+}
+
+/* Conversation live button width unset & border-radius */
+.conversation-live-b{
+    width: unset;
+    border-radius: 0 15px 15px 0;
+}
+
+/* Login, Card, Modal, Register, Search-(Welcome), 
+ * Change avatar, (mail, city & pass change), Coach panel, 
+ * Note, Advertise, Coach info change,
+ * Message-user title, Message-user text, New Message,
+ * Conversation live & New Message Send buttons hover */
+.login-b:hover,
+.buttons button:hover,
+.modal-footer button:hover,
+.register-b:hover,
+.search-b:hover,
+.contact-b:hover,
+.change-avatar-b:hover,
+.mail-city-pass-b:hover,
+.panel-btn:hover,
+.note-b:hover,
+.ads-b:hover,
+.change-coach-info-b:hover,
+.msg-title-b:hover,
+.msg-text-b:hover,
+.new-msg-btn:hover,
+.conversation-live-b:hover,
+.new-message-b:hover,
+.admin-b:hover,
+.adminMMsgs-b:hover,
+.admin-pass-b:hover{
+    background-color: var(--btn-hover);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Conversation toggle button hover */
+.contacts-btn:hover{
+    color: var(--btn-hover);
+}
+
+@media (max-width: 576px) {
+    /* Conversation (Priv.msgs) */
+    .conversations{
+        width: 100%;
+    }
+
+    /* Conversations list (Priv.msgs) */
+    .conv-list{
+        width: 100%;
+    }
+
+    /* Search conversation (Priv.msgs) */
+    .conv-messages{
+        width: 100%;
+    }
+
+    /* New Motivation Messages Form */
+    .adminMMsgs{
+        width: 100%;
+    }
+}
+
+/* Media query for extra small $ small devices */
+@media (max-width: 768px) {
+    /* Personal info div (Profile/personal-container) */
+    .personal-container{
+        width: 95%;
+    }
+
+    /* Note container (Profile/note) */
+    .note-container{
+        width: 95%;
+    }
+
+    /* Ads div (Profile/advertise) */
+    .ads{
+        width: 95%;
+    }
+
+    /* Coach panel container (Profile/cpanel) */
+    .coach-panel-container{
+        width: 95%;
+    }
+
+    /* Coach panel title (Profile/cpanel) */
+    .coach-panel-h{
+        width: 70%;
+    }
+
+    /* Coach info (Profile/cpanel) */
+    .coach-info{
+        width: 95%;
+        margin: 1.5em 0 2em 0!important;
+    }
+
+    /* Message to user (Profile/cpanel) */
+    .msg-to-users{
+        width: 95%;
+        margin: 0 0 1.5em 0!important;
+    }
+
+    /* Conversation (Priv.msgs) */
+    .conversations{
+        width: 80%;
+    }
+
+    /* Search conversation (Priv.msgs) */
+    .conv-messages{
+        width: 100vw;
+    }
+
+    /* New Motivation Messages Form */
+    .adminMMsgs{
+        width: 100%;
+    }
+}
+
+/* Media query for medium devices */
+@media (min-width: 769px) and (max-width: 992px) {
+    /* Personal info div (Profile/personal-container) */
+    .personal-container{
+        width: 85%;
+    }
+
+    /* Note container (Profile/note) */
+    .note-container{
+        width: 85%;
+    }
+
+    /* Ads div (Profile/advertise) */
+    .ads{
+        width: 85%;
+    }
+
+    /* Coach panel container (Profile/cpanel) */
+    .coach-panel-container{
+        width: 85%;
+    }
+
+    /* Coach info (Profilecpanel) */
+    .coach-info{
+        width: 80%;
+    }
+
+    /* Message text input (Profile/cpanel*/
+    .msg-to-users{
+        width: 80%;
+    }
+
+    /* Conversations (Priv.msgs) */
+    .conversations{
+        width: 40%;
+    }
+
+    /* Conversation list (Priv.msgs) */
+    .conv-list{
+        height: 73.5vh;
+    }
+
+    /* Search conversation (Priv.msgs) */
+    .conv-messages{
+        width: 60%;
+    }
+
+    /* New Motivation Messages Form */
+    .adminMMsgs{
+        width: 90%;
+    }
+}
+
+/*  Media query for medium devices and up */
+@media (min-width: 769px){
+    /* Message text input (Profile/cpanel*/
+    .msg-text-i{
+        width: 90%;
+        margin: 0 0 1.5em 0!important;
+    } 
+}
+
+@media (min-width: 992px){
+    .coach-card{
+        max-width: 30em;
+    }
+
+    /* Conversation (Priv.msgs) */
+    .conversations{
+        width: 25vw;
+    }
+
+    /* Search conversation (Priv.msgs) */
+    .conv-messages{
+        width: 70vw;
+    }
+
+    /* New Motivation Messages Form */
+    .adminMMsgs{
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px){
+    /* Coach Card */
+    .coach-card{
+        max-width: 34em;
+    }
+}
+
+/* Validation error */
+.error{
+    color: #ff0000;
+    font-weight: 700;
+}
+
+/* Inputs border on error */
+input.error,
+textarea.error{
+    border: 2px solid #ff0000;
+}
+
+/* Inputs border on success */
+input.valid{
+    border: 2px solid #008000;
+}
+
+.success,
+.succMsg{
+    color: #008000;
+    font-size: 1.3em;
+}
