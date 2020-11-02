@@ -1,4 +1,4 @@
-# Sport's coach finder (final exam app)
+# Sports coach finder (final exam app)
 
 This is final exam project of my one year web development IT Academy program.
 
